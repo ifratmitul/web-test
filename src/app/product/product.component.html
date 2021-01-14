@@ -1,10 +1,80 @@
-<div class="product-container">
+<!-- <div class="product-container">
     <div class="header-box">
         <h2 class="u-centered-text">Products</h2>
     </div>
 
+</div> -->
+<div class="row">
+
+
+
+<section class="player-header">
+    <div class="u-centered-text">
+        <h2 class="heading-secondary">
+            Products
+        </h2>
+
+
+       
+    </div>
+</section>
+
+
+
+
+<section class="product-container row">
+
+
+    <span *ngFor="let item of products" class=" col-1-of-3">
+        <app-product-item [passingData] = "item"></app-product-item>
+ 
+     </span>
+ 
+
+    
+
+
+    
+    <!-- <ul><li *ngFor="let item of playerList">{{item.name}}</li></ul> -->
+</section>
+
+<div class="row">
+    <div class=" banner">
+        <div class="banner-text">
+            <h2>There is something for everyone!</h2>
+            <p>15% off your first 3 order</p>
+           
+
+        </div>
+    
+        <img src="../../assets/images/banner2.png" alt="">
+    </div>
 </div>
 
-<div class="banner">
-    
+
+
+
+
+
+
+    <div class="u-centered-text">
+        <h2 class="heading-secondary">
+            Review
+        </h2>
+        <img src="../../assets/images/23273695 1.png" alt="" class="review-img">
+        <div class="review-text-box">
+            <h4>Shahidul Islam</h4>
+            <p>"Amazing test with Quality products"</p>
+            <p>
+                <span class="dot-small"></span>
+                <span class="dot-small"></span>
+                <span class="dot-small"></span>
+            </p>
+        </div>
+
+
+       
+    </div>
+
+
 </div>

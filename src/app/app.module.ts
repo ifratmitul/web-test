@@ -7,7 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { FooterComponent } from './footer/footer.component';
-
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ProductInterceptor } from './product/product.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +19,10 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: ProductInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

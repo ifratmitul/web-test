@@ -1,7 +1,13 @@
 .header-container {
-  padding: 0;
-  max-width: 90rem;
+  //padding-bottom: 2rem;
+  //max-width: 90rem;
   height: 105vh;
+  margin: 0 auto;
+}
+
+header {
+  height: 105vh;
+  // margin-bottom: 50rem;
 }
 
 nav ul {
@@ -39,11 +45,6 @@ nav a {
 
   background: #1f4948;
   .right-img {
-    // position: absolute;
-    // margin-top: -10rem;
-    // height: 100%;
-    // width: 45%;
-
     position: absolute;
     width: 729px;
     height: 715px;
@@ -128,7 +129,7 @@ nav a {
   position: absolute;
   width: 36.7rem;
   height: 37.5rem;
-  left: 109.2rem;
+  left: 38.4rem;
   top: 19.5rem;
   z-index: 3;
   //background: #1f4948;
@@ -205,7 +206,6 @@ nav a {
     font-weight: 200;
     font-size: 14px;
     line-height: 3rem;
-    /* identical to box height, or 187% */
 
     text-align: center;
   }
@@ -307,10 +307,9 @@ nav a {
   position: absolute;
   height: 2rem;
   width: 5rem;
-  float: right;
+  right: 5rem;
 
-  right: 7rem;
-  top: 74rem;
+  top: 75rem;
 
   .left-arrow {
     position: absolute;
@@ -318,7 +317,7 @@ nav a {
     width: 18px;
     border-radius: 50%;
     background: #a5bebe;
-    content: "\003C";
+
     color: black;
     text-align: center;
   }
