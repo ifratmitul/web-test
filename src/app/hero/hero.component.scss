@@ -1,0 +1,345 @@
+.container {
+  padding: 2rem 5rem;
+  max-width: 90rem;
+  height: 105vh;
+  display: flex;
+  left: 0;
+  top: 0;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  //   margin-top: 25vh;
+}
+
+.left-part {
+  position: absolute;
+  left: 12rem;
+  top: 1rem;
+  .dot {
+    position: absolute;
+    width: 3.9rem;
+    height: 3.9rem;
+    left: 0.1rem;
+    top: 1.8rem;
+    z-index: -1;
+
+    border-radius: 50%;
+
+    background: #a5bebe;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+
+    margin: 3rem 0;
+  }
+
+  nav li {
+    margin: 0 1rem;
+    width: 10.3rem;
+    height: 3rem;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: normal;
+    padding: 0.25em;
+    //position: absolute;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 18rem;
+    .header-text-box {
+      width: 40rem;
+      height: 14.4rem;
+      left: 10rem;
+      top: -4.4rem;
+      color: #4f4f4f;
+
+      h2 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5.4rem;
+        line-height: 7.2rem;
+        /* or 133% */
+
+        color: #4f4f4f;
+      }
+      strong {
+        color: #1f4948;
+      }
+    }
+
+    .para-text-box {
+      width: 32rem;
+      height: 9.4rem;
+
+      color: #4f4f4f;
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        line-height: 2.9rem;
+      }
+    }
+  }
+
+  .input-box {
+    position: absolute;
+    width: 47.8rem;
+    height: 7rem;
+
+    top: 27.1rem;
+    // 478px;
+    // height: 70px
+
+    .input-element {
+      border: 2px solid #1f4948;
+      width: 26.8rem;
+      height: 7rem;
+      border-top-left-radius: 3.5%;
+      border-bottom-left-radius: 3.5%;
+      padding: 10px;
+    }
+    .input-button {
+      position: absolute;
+      background: #1f4948;
+      color: white;
+      height: 7rem;
+      border: none;
+      border-top-right-radius: 3.5%;
+      border-bottom-right-radius: 3.5%;
+      padding: 10px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 3rem;
+      left: -1;
+
+      text-align: center;
+    }
+  }
+
+  .vector-box-2 {
+    z-index: 3;
+
+    position: absolute;
+    width: 40.7rem;
+    height: 21.4rem;
+    left: -44rem;
+    top: 50.3rem;
+
+    opacity: 0.1;
+    transform: rotate(-111.78deg);
+
+    .vector-2 {
+      position: absolute;
+      left: 1rem;
+      // right: 71.86%;
+      top: 31.12%;
+      //bottom: 62.39%;
+      transform: rotate(111.78deg);
+    }
+
+    .vector-3 {
+      position: absolute;
+      left: -2.45%;
+      right: 81.78%;
+      top: 30.17%;
+      bottom: 63.85%;
+      transform: rotate(111.78deg);
+    }
+
+    .vector-4 {
+      position: absolute;
+      left: -1.62%;
+      right: 99.07%;
+      top: 22.04%;
+      bottom: 76.15%;
+      transform: rotate(111.78deg);
+    }
+  }
+}
+
+.righ-part {
+  position: absolute;
+  width: 72.9rem;
+  height: 71.5rem;
+  //left: 740px;
+  right: 0;
+  top: 0;
+  float: right;
+
+  background: #1f4948;
+
+  .btn-box {
+    position: absolute;
+    width: 9rem;
+    height: 4rem;
+
+    right: 2rem;
+    top: 2rem;
+    background: transparent;
+    color: white;
+
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+
+    .btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      align-self: center;
+      margin: 0 2rem;
+    }
+  }
+
+  .image1 {
+    position: absolute;
+    z-index: 5;
+    width: 50rem;
+    height: 30rem;
+    left: -6rem;
+    top: 15rem;
+
+    border-top-right-radius: 30%;
+    object-fit: cover;
+  }
+  .image2 {
+    position: absolute;
+    z-index: 5;
+    width: 35.8rem;
+    height: 23.9rem;
+    left: 8.2rem;
+    top: 49rem;
+    border-top-left-radius: 30%;
+    object-fit: cover;
+  }
+
+  .image3 {
+    position: absolute;
+    z-index: 5;
+    width: 20rem;
+    height: 25rem;
+    right: 0rem;
+    top: 46.5rem;
+    object-fit: fill;
+    transform: skewY(10deg);
+    border-bottom-left-radius: 20%;
+  }
+
+  .vector-box {
+    position: absolute;
+    width: 36.7rem;
+    height: 37.5rem;
+    left: 38.4rem;
+    top: 19.5rem;
+    z-index: 3;
+    //background: #1f4948;
+
+    .vector-1 {
+      position: absolute;
+      z-index: 3;
+      //left: 80.82%;
+      right: 6%;
+      top: 31.21%;
+      bottom: 52.05%;
+    }
+    .vector-2 {
+      position: absolute;
+      left: 1rem;
+      right: 10rem;
+      top: 10rem;
+      bottom: 81.05%;
+    }
+
+    .vector-3 {
+      position: absolute;
+      //left: 10rem;
+      right: 3rem;
+      top: 15rem;
+      //bottom: 9rem;
+      rotate: 250deg;
+    }
+
+    .vector-4 {
+      position: absolute;
+      left: 7rem;
+      right: 15rem;
+      top: 20rem;
+      bottom: 8rem;
+      rotate: 150deg;
+    }
+  }
+
+  .dot-box {
+    position: absolute;
+    width: 7.88rem;
+    height: 8.9rem;
+    left: 13.5rem;
+    top: 11.7rem;
+
+    z-index: 5;
+  }
+
+  .dot-small {
+    height: 2.5px;
+    width: 2.5px;
+    margin: 1.3px 2.5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.7;
+  }
+
+  .arrow-box {
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    right: 5rem;
+
+    top: 75rem;
+
+    .left-arrow {
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: #a5bebe;
+
+      color: black;
+      text-align: center;
+    }
+
+    .right-arrow {
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #1f4948;
+      right: 0;
+      top: -0.4rem;
+      text-align: center;
+      font-size: larger;
+      font-weight: bolder;
+
+      color: white;
+    }
+  }
+}

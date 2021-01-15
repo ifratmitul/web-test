@@ -3,19 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+
 import { ProductComponent } from './product/product.component';
 import { ProductItemComponent } from './product/product-item/product-item.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { ProductInterceptor } from './product/product.interceptor';
+import { ModalPopupComponent } from './modal-popup/modal-popup.component';
+import { HeroComponent } from './hero/hero.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+
     ProductComponent,
     ProductItemComponent,
-    FooterComponent
+    FooterComponent,
+    ModalPopupComponent,
+    HeroComponent,
+
   ],
   imports: [
     BrowserModule,
